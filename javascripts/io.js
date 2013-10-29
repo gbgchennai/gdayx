@@ -436,8 +436,8 @@ var separator = [
 * In order, the colors that each Digit's dots should be.
 * Blank value means it's a separator.
 */
-var digitColors = ['009a49', '009a49', '009a49', '',
-                  '009a49', '009a49', '',
+var digitColors = ['c0000b', 'c0000b', 'c0000b', '',
+                  'c0000b', 'c0000b', '',
                   '13acfa', '13acfa', '',
                   '13acfa', '13acfa'];
 

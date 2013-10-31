@@ -40,12 +40,14 @@
 			z-index: 99;
 			position: relative;
 		}
-		#schedule td{
-			vertical-align: middle;
-		}
-		#schedule td h4{
-			color: #dd4814;
-		}
+		#schedule td{ vertical-align: middle; }
+		#schedule td h4{ color: #dd4814; }
+
+		#speakers-sec img{ height:150px; text-align: center; }
+		#speakers-sec h3{ color: #dd4814; }
+
+		#social img { height: 180px; }
+		#social a{ font-size: 16px; }
 	</style>
   </head>
   <body style="overflow-y:auto">
@@ -69,7 +71,9 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><button type="button" class="btn btn-primary">Book Ticket</button></li>
+            <li>
+            <button type="button" class="btn btn-primary" onClick="location.href='https://www.eventbrite.com/event/9066354711'">Book Ticket</button>
+            </li>
           </ul>
 
         </div>
@@ -83,7 +87,7 @@
         <div class="row">
 			<div class="col-lg-12 pagination-centered" style="padding-top:0px;">
 				<p class="text-center">
-				<img src="http://ebmedia.eventbrite.com/s3-build/images/3285675/60861540297/1/logo.jpg" class="gbglogo"/>
+				<img src="http://gbgchennai.github.io/gdayx/images/Logos_GDX_Chennai.jpg" class="gbglogo"/>
 				</p>
 			</div>
         </div>
@@ -101,7 +105,7 @@
 			<div class="col-lg-12 pagination-centered" style="padding-top:180px;">
 				<p class="lead text-center">Nov 9, Chennai</p>
 				<p class="text-center">
-					<button type="button" id="booking" class="btn btn-primary btn-lg">Book your ticket</button>
+					<button type="button" id="booking" class="btn btn-primary btn-lg" onClick="location.href='https://www.eventbrite.com/event/9066354711'">Book your ticket</button>
 				</p>
 			</div>
         </div>
@@ -168,15 +172,14 @@
                   <tr>
                     <td>1:30pm-2:20pm</td>
                     <td colspan="2">
-                    	<h4>KeyNote: Scaling by 10x - Rise of the Growth hacker</h4>
-                    	?
+                    	<h4>Entrepreneurship: Opportunities and Challenges</h4>
                     </td>
                   </tr>
                   <tr>
                     <td>2:20pm-3:10pm</td>
                     <td>
                     	<h4>G+ for Business or AdWords</h4>
-                    	Pooja Srinivas, Manager - Product Quality Operations, Google
+                    	Mrinalini Chakrabarty, Joshua Singh, Google
                     </td>
                     <td>
                     	<h4>Confessions of a Hustler: Outreach hacks</h4>
@@ -191,7 +194,7 @@
                     <td>3:30pm-4:20pm</td>
                     <td>
                     	<h4>SEO unplugged: Fireside chat with the SEO experts</h4>
-                    	Syed Malik, Suganthi Sugumaran, Pooja Srinivas
+                    	Syed Malik, Suganthi Sugumaran, Mrinalini Chakrabarty, Joshua Singh
                     </td>
                     <td>
                     	<h4>Optimize: Building a watertight sales funnel</h4>
@@ -217,10 +220,7 @@
 				<p>
 					GDayX brings together some of the best speakers and entrepreneurs in the country
 					to share their knowledge with you. Listen and learn from the people who walk the talk!
-					All this knowledge comes to you free of cost. Of course, there is free food and swags as well :)
-				</p>
-				<p>
-					<button type="button" id="booking" class="btn btn-primary">Book your ticket</button>
+					All this knowledge comes to you free of cost. Of course, it includes swags and food as well.
 				</p>
             </div>
           </div>
@@ -228,12 +228,55 @@
       </div>
 
       <div id="speakers"><br/></div>
-      <div class="bs-docs-section">
+      <div id="speakers-sec" class="bs-docs-section">
         <div class="row">
           <div class="col-lg-12">
             <div class="page-header">
               <h1 id="tables">Speakers</h1>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+          <img src="http://gbgmumbai.org/wp-content/uploads/2013/10/sunil-rao.jpg"/>
+              <h3>Sunil Rao</h3>
+              <h4>Country Head- Google Outreach Programs.</h4>
+              <p>
+Sunil at Google is responsible for designing programs to grow the local internet ecosystem by supporting businesses, IT professionals, educational organisations, startups and developers to understand their opportunities on the internet and getting them to start using internet as part of their lives.
+Sunil has worked in various leadership roles before joining Google. His earlier stints were as Head of Developer ecosystem at Nokia and Symbian . He has lead sales and marketing efforts at various Fortune 500 companies. He has lived and worked in North America, Europe and Asian Markets.
+              </p>
+          </div>
+          <div class="col-lg-6">
+          <img src="http://gbgmumbai.org/wp-content/uploads/2013/10/Paul-Ravindranath-253x300.png"/>
+              <h3>Paul Ravindranath</h3>
+              <h4>Program Manager, Emerging Markets – Google</h4>
+              <p>
+At Google, Paul works on Emerging Markets programs to grow the local internet ecosystem by supporting businesses, entrepreneurs, IT professionals, students and developers to understand their opportunities on the internet and by getting them to start actively using the internet as part of their lives.
+</p><p>
+Prior to this, Paul spent 7+ Years managing Google’s Search Quality team with expertise in Search, SEO and Webmaster Communications. He has interned with Philips as a Software Engineer, holds an Engineering degree in Computer Science and is a Stanford Certified Project Manager.
+              </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+          <img src="http://gbgmumbai.org/wp-content/uploads/2013/10/syedmallik-pic-300x243.png"/>
+              <h3>Syed Malik</h3>
+              <h4>Sr. Strategist for Search Quality and Webmaster Outreach Specialist at Google</h4>
+              <p>
+Syed Malik is responsible for building & executing strategy to drive high-quality content in India, improve webmaster transparency & outreach coverage.  He was an Analyst in the Google search Quality team before he took to the Outreach Specialist role and has been associated with this team ever since he joined Google in 2006. Before, he was a freelance web developer and has over a decade of experience in the online industry overall.
+</p><p>
+He’s a Google certified trainer and an active evangelist of Google Webmaster Resources and loves interacting with webmasters on various platforms.
+              </p>
+          </div>
+          <div class="col-lg-6">
+          <img src="http://qph.is.quoracdn.net/main-thumb-337806-200-1YBP1TZaan5nKHuY7tKXauhDDB73zWOj.jpeg"/>
+              <h3>Dorai Thodla</h3>
+              <h4>Founder, CTO, iMorph Inc.</h4>
+              <p>
+Dorai Thodla is a serial entrepreneur. He co-founded two companies in India and two in US. Starting as a consulting company, his companies moved from services to products and augmented products with services. He currently helps companies bootstrap product initiatives, advises companies on product and market strategies (mostly selling in US). He strongly believes that building a product innovation culture in a company will help services businesses. His company tracks several emerging technology trends including Cloud Computing, Mobile Computing, Social Computing and opportunity mapping. He spends half his time in US and the other half in India.
+
+              </p>
           </div>
         </div>
       </div>
@@ -246,8 +289,22 @@
               <h1 id="tables">Location</h1>
             </div>
           </div>
-          <div class="col-lg-12" style="height:400px">
+          <div class="col-lg-6" style="height:400px">
+				<img src="http://gbgchennai.github.io/gdayx/images/mainhall.JPG" style="width:100%;height:100%;"/>
+          </div>
+          <div class="col-lg-6" style="height:400px">
 <iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Hindustan+University,+No.1,Rajiv+Gandhi+Salai,+Padur,+Kelambakkam,Chennai,Tamil+Nadu,+603103,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=38.092988,75.673828&amp;ie=UTF8&amp;hq=Hindustan+University,+No.1,Rajiv+Gandhi+Salai,+Padur,+Kelambakkam&amp;hnear=603103,+India&amp;t=m&amp;ll=12.800838,80.224199&amp;spn=0.062979,0.03163&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Hindustan+University,+No.1,Rajiv+Gandhi+Salai,+Padur,+Kelambakkam,Chennai,Tamil+Nadu,+603103,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=38.092988,75.673828&amp;ie=UTF8&amp;hq=Hindustan+University,+No.1,Rajiv+Gandhi+Salai,+Padur,+Kelambakkam&amp;hnear=603103,+India&amp;t=m&amp;ll=12.800838,80.224199&amp;spn=0.062979,0.03163" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+<br/>
+This year, GDayX will be held by Google Business Group (GBG) in association with Google Student Ambassadors (GSA) through out the country.
+At chennai, we are hosting GDayX at Hindustan University (OMR) at the Andromeda Hall. The registration will begin at 9:00am on Saturday.
+<br/>
+We are also planning to run buses for attendees to commute to the venue.
+So, please keep tab on your email for pickup point announcement, after you book the tickets.
+
           </div>
         </div>
       </div>
@@ -261,25 +318,33 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row" id="social">
+          <div class="col-lg-3">
+<img src="https://lh3.googleusercontent.com/-br7S08ZTLKI/UZuscusIxsI/AAAAAAAAAFU/jzxvtuGbyH4/s250-no/gbg_chennai_logo_j.jpg"/>
+          </div>
+          <div class="col-lg-9">
 GDayX is organized by Google Business Group (GBG) - Chennai and supported by Google.
 GBG Chennai is a community of Chennai's business professionals sharing knowledge about Internet technologies for business success.
 All events are free and open to business professionals who are interested to learn and become more successful in using the internet for their business.
+<br/><br/>
+Connect with us on
+<a href="https://plus.google.com/104312987638586881953">Google +</a>
+|
+<a href="https://www.facebook.com/groups/gbgchennai/">Facebook</a>
           </div>
         </div>
       </div>
 
-
+<!--
       <footer>
         <div class="row">
           <div class="col-lg-12">
-            <p>Organized by <a href="#">Google Business Group - Chennai</a>.
+            <p>Organized by <a href="https://plus.google.com/104312987638586881953">Google Business Group - Chennai</a>.
           </div>
         </div>
 
       </footer>
-
+-->
 
     </div>
 
